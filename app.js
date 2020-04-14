@@ -11,6 +11,8 @@ app.use(express.static('./public'));
 app.engine('html', require('ejs').renderFile);
 app.listen(process.env.PORT || 3000);
 
+// console.log(`${process.env.S3_BUCKET}`)
+
 /*
  * Configure the AWS region of the target bucket.
  * Remember to change this to the relevant region.
@@ -20,7 +22,7 @@ aws.config.region = 'eu-west-2';
 /*
  * Load the S3 information from the environment variables.
  */
-const S3_BUCKET = process.env.S3_BUCKET;
+const S3_BUCKET = "testsigurd";
 
 /*
  * Respond to GET requests to /account.
