@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=dev && node app.js"
+    "start": "set NODE_ENV=dev && node app.js",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "dependencies": {
     "aws-sdk": "2.x",
@@ -13,5 +14,6 @@
     "express": "4.x"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "heroku-run-build-script": true
 }
